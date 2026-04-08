@@ -106,11 +106,11 @@ Hard	1.0
 Total	3.0
 
 OpenEnv Compliance
-✔ Typed Observation, Action, Reward models (Pydantic)
-✔ step(), reset(), state() implemented
-✔ openenv.yaml included
-✔ Deterministic graders
-✔ 3 tasks with increasing difficulty
+Typed Observation, Action, Reward models (Pydantic)
+step(), reset(), state() implemented
+openenv.yaml included
+Deterministic graders
+3 tasks with increasing difficulty
 
 Creativity & Novelty
 Simulates customer support workflows
