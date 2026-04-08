@@ -1,0 +1,50 @@
+# openenv.yaml
+name: customer_support_env
+version: 1.0.0
+description: |
+  A simple OpenEnv environment simulating a customer support AI assistant.
+  The agent responds to customer queries and is graded on the quality of its responses.
+author: Aditi Sinha
+license: MIT
+tags:
+  - openenv
+  - customer-support
+  - llm
+  - ai-agent
+observation:
+  type: object
+  fields:
+    message_id:
+      type: integer
+      description: Unique ID of the customer message
+    customer_message:
+      type: string
+      description: The customer's message
+    conversation_history:
+      type: array
+      items:
+        type: string
+      description: Previous conversation messages
+action:
+  type: object
+  fields:
+    response_message:
+      type: string
+      description: The AI agent's response message
+    escalate_to_human:
+      type: boolean
+      description: Whether the agent escalates the conversation to a human
+reward:
+  type: object
+  fields:
+    reward:
+      type: number
+      minimum: 0.0
+      maximum: 1.0
+tasks:
+  - name: Easy
+    description: Answer a basic query like working hours
+  - name: Medium
+    description: Answer a password recovery question
+  - name: Hard
+    description: Handle a replacement request accurately
