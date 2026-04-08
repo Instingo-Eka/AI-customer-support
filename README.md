@@ -1,9 +1,3 @@
-title: Customer Support AI Environment
-colorFrom: blue
-colorTo: green
-sdk: docker
-app_file: inference.py
-pinned: false
 Customer Support AI Environment (OpenEnv)
 Overview
 This project implements a real-world customer support simulation environment using the OpenEnv specification. It allows AI agents (LLMs) to interact with customer queries and be evaluated based on the quality of their responses.
