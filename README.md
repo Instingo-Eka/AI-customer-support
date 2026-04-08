@@ -91,7 +91,7 @@ Run container
 docker run customer_support_env
 (Optional: pass API key)
 
-docker run --env OPENAI_API_KEY="your_key" customer_support_env
+docker run --env OPENAI_API_KEY=" " customer_support_env
 Baseline Results
 Task	Score
 Easy	1.0
